@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{ data['name'] }}</title>
     <meta name="description" content="Web Developer | Freelancer | Full Stack Developer | New Gen Coder | Know  Python | Flask | C# | Core Java | MySQL | Shivam Raj Dubey | S.R.Dubey">
-    <link rel="stylesheet" href="{{ url_for('static',filename='assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="static/assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
-    <link rel="stylesheet" href="{{ url_for('static',filename='assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="static/assets/fonts/font-awesome.min.css">
     <link rel="shortcut icon" href="{{ url_for('static',filename='assets/img/favicon.svg') }}" type="image/x-icon">
 </head>
 
@@ -40,32 +40,32 @@
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-1" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/cabin.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/Python.jpg') }}">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-2" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/cake.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/WebDeveloper.jpg') }}">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-3" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/circus.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/Flask.png') }}">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-4" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/game.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/Programming.jpg') }}">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-5" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/safe.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/Java.png') }}">
                     </a></div>
                 <div class="col-md-6 col-lg-4"><a class="d-block mx-auto portfolio-item" href="#portfolio-modal-6" data-bs-toggle="modal">
                         <div class="d-flex portfolio-item-caption position-absolute h-100 w-100">
                             <div class="text-center text-white my-auto portfolio-item-caption-content w-100"><i class="fa fa-search-plus fa-3x"></i></div>
-                        </div><img class="img-fluid" src="static/assets/img/portfolio/submarine.png">
+                        </div><img class="img-fluid" src="{{ url_for('static',filename='assets/img/portfolio/experience.jpg') }}">
                     </a></div>
             </div>
         </div>
@@ -148,9 +148,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="assets/img/portfolio/cabin.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h1'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/python.jpg') }}">
+                                <p class="mb-5">{{ data['por-topic1'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -167,9 +167,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="static/assets/img/portfolio/cake.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h2'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/WebDeveloper.jpg') }}">
+                            <p class="mb-5">{{ data['por-topic2'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -186,9 +186,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="static/assets/img/portfolio/circus.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h3'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/Flask.png') }}">
+                                <p class="mb-5">{{ data['por-topic3'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -205,9 +205,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="static/assets/img/portfolio/game.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h4'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/Programming.jpg') }}">
+                                <p class="mb-5">{{ data['por-topic4'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -224,9 +224,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="static/assets/img/portfolio/safe.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h5'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/Java.png') }}">
+                                <p class="mb-5">{{ data['por-topic5'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -243,9 +243,9 @@
                     <div class="container text-center">
                         <div class="row">
                             <div class="col-lg-8 mx-auto">
-                                <h2 class="text-uppercase text-secondary mb-0">Project Name</h2>
-                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="static/assets/img/portfolio/submarine.png">
-                                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                <h2 class="text-uppercase text-secondary mb-0">{{ data['por-h6'] }}</h2>
+                                <hr class="star-dark mb-5"><img class="img-fluid mb-5" src="{{ url_for('static',filename='assets/img/portfolio/experience.jpg') }}">
+                                <p class="mb-5">{{ data['por-topic6'] }}</p>
                             </div>
                         </div>
                     </div>
@@ -254,8 +254,8 @@
             </div>
         </div>
     </div>
-    <script src="{{ url_for('static',filename='assets/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='assets/js/freelancer.js') }}"></script>
+    <script src="static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/assets/js/freelancer.js"></script>
 </body>
 
 </html>

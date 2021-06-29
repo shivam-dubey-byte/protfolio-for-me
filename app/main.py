@@ -6,6 +6,8 @@ from datetime import datetime
 #with open('config.json','r') as c:
 #	params=json.load(c)['params']
 #	data=json.load(c)['data']
+date = datetime.now()
+experience = date.year-2019
 c={
 	"params":
 	{
@@ -25,13 +27,36 @@ c={
 		"copyright":"Shivam Raj Dubey 2021",
 		"about-p1-div1":"This is Shivam Raj Dubey. Freelancer, Web Developer, Full Stack Developer. I know the languages Python, C#, Core Java. I have worked with the python framework Flask.",
 		"about-p2-div2":"If you wanna have your digital presence than you can contact me for any Web Development works.",
-		"about-p3-div2":"Web Developer | New to AI | FullStack Developer | Python | Flask | C# | Java | JavaScript | Freelancer"
+		"about-p3-div2":"Web Developer | New to AI | FullStack Developer | Python | Flask | C# | Java | JavaScript | Freelancer",
+		"por-topic1":"I know many languages, 'Python' is one of them. Write now am working with this language. And I have a good hands on this. I'm the certified Developer in Python.",
+		"por-topic2":"I'm a good WebDeveloper. I have a good practice on this. I have created some of the website in production.",
+		"por-topic3":"I'm a good experienced in flask framework and I'm mainly work with this framework only.",
+		"por-topic4":"I'm a good Programmer.",
+		"por-topic5":"I have also good hands on Java-Core. So, I can also work with java frameworks.",
+		"por-topic6":"I have a experience of '"+ str(experience) + " Years'.",
+		"por-h1":"Python",
+		"por-h2":"Full Stack Developer",
+		"por-h3":"Flask",
+		"por-h4":"Programming",
+		"por-h5":"Java",
+		"por-h6":"experience"
+
+
+
 
 	},
 	"links":{
 		"facebook":"https://www.facebook.com/profile.php?id=100027876074853",
-		"linkedin":"https://twitter.com/ShivamRajDubey2",
-		"twitter":"https://www.linkedin.com/in/shivam-raj-dubey-5610361ba/"
+		"twitter":"https://twitter.com/ShivamRajDubey2",
+		"linkedin":"https://www.linkedin.com/in/shivam-raj-dubey-5610361ba/",
+		"img":{
+		"por-img1":"",
+		"por-img2":"",
+		"por-img3":"",
+		"por-img4":"",
+		"por-img5":"",
+		"por-img6":""
+		}
 	}
  }
 params = c['params']
